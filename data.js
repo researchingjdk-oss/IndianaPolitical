@@ -362,35 +362,35 @@ const electionData = {
       "referendums": [
         {
           "title": "Carmel Clay Schools Referendum",
-          "question": "School funding referendum (question text not captured in source)",
+          "question": "School funding referendum",
           "type": "School",
           "year": 2026,
           "status": "On ballot"
         },
         {
           "title": "Hamilton Southeastern Schools Referendum",
-          "question": "School funding referendum (question text not captured in source)",
+          "question": "School funding referendum",
           "type": "School",
           "year": 2026,
           "status": "On ballot"
         },
         {
           "title": "Noblesville Schools Referendum",
-          "question": "School funding referendum (question text not captured in source)",
+          "question": "School funding referendum",
           "type": "School",
           "year": 2026,
           "status": "On ballot"
         },
         {
           "title": "Westfield Washington Schools Referendum",
-          "question": "School funding referendum (question text not captured in source)",
+          "question": "School funding referendum",
           "type": "School",
           "year": 2026,
           "status": "On ballot"
         },
         {
           "title": "Sheridan Schools Referendum",
-          "question": "School funding referendum (question text not captured in source)",
+          "question": "School funding referendum",
           "type": "School",
           "year": 2026,
           "status": "On ballot"
