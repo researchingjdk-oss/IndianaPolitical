@@ -295,10 +295,10 @@ function populateCountyDropdown() {
 
 // Display all counties grid
 function displayAllCounties() {
-    const countiesGridEl = document.getElementById('countiesGrid');
+    // const countiesGridEl = document.getElementById('countiesGrid');
     const countyNames = getAllCountyNames();
 
-    countiesGridEl.innerHTML = '';
+    // countiesGridEl.innerHTML = '';
 
     countyNames.forEach(countyName => {
         const county = getCountyByName(countyName);
@@ -326,7 +326,7 @@ function displayAllCounties() {
         infoEl.textContent = `${candidateCount} candidates | ${referendumCount} referendums | ${questionCount} questions`;
         countyCard.appendChild(infoEl);
 
-        countiesGridEl.appendChild(countyCard);
+        // countiesGridEl.appendChild(countyCard);
     });
 }
 
