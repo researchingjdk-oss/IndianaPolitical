@@ -92,7 +92,7 @@ function displayCountyData(countyName) {
     resultsSection.style.display = 'block';
 
     // Set county name and zip codes
-    document.getElementById('countyName').textContent = county.name + " County";
+    document.getElementById('countyName').textContent = county.name;
     // document.getElementById('countyZips').textContent = 'Zip Codes: ' + county.zip_codes.join(', ');
 
     // Display candidates
