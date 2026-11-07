@@ -504,6 +504,7 @@ const electionData = {
     "46290": "Marion",
     "46298": "Marion"
   }
+}
 // Get county by zip code
 function getCountyByZipCode(zipCode) {
     if (!electionData) return null;
