@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Election Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Indiana Election Information</h1>
+            <p class="subtitle">Candidates, Referendums, and Voter Questions by County</p>
+        </header>
+
+        <section class="search-section">
+            <div class="search-box">
+                <h2>Find Your Election Information</h2>
+                <p>Enter your zip code to see candidates, referendums, and voter questions for your county:</p>
+                <div class="input-group">
+                    <input type="text" id="zipCodeInput" placeholder="Enter your Indiana zip code..." maxlength="5" pattern="[0-9]{5}">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <p id="errorMsg" class="error"></p>
+            </div>
+        </section>
+
+        <section class="county-selector">
+            <h2>Or Select Your County</h2>
+            <select id="countySelect">
+                <option value="">-- Select a County --</option>
+            </select>
+        </section>
+
+        <main class="results-section" id="resultsSection" style="display: none;">
+            <div class="county-header">
+                <h2 id="countyName"></h2>
+                <p id="countyZips"></p>
+            </div>
+
+            <section class="candidates-section">
+                <h3>Candidates</h3>
+                <div class="candidates-grid">
+                    <div class="candidate-category">
+                        <h4>Federal</h4>
+                        <div id="federalCandidates"></div>
+                    </div>
+                    <div class="candidate-category">
+                        <h4>State</h4>
+                        <div id="stateCandidates"></div>
+                    </div>
+                    <div class="candidate-category">
+                        <h4>County</h4>
+                        <div id="countyCandidates"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="referendums-section">
+                <h3>Referendums</h3>
+                <div id="referendumsList"></div>
+            </section>
+
+            <section class="voter-questions-section">
+                <h3>Voter Questions</h3>
+                <div id="voterQuestionsList"></div>
+            </section>
+        </main>
+
+        <section class="all-counties-section">
+            <h2>All Indiana Counties</h2>
+            <p>Browse election information for all counties in Indiana:</p>
+            <div class="counties-grid" id="countiesGrid"></div>
+        </section>
+
+        <footer>
+            <p>Data provided by Indiana Election Division | Last updated: <span id="lastUpdated"></span></p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
