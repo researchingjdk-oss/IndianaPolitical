@@ -4,20 +4,21 @@ const electionData = {
     "state": "Indiana",
     "election": "2026 General Election (November 3, 2026)",
     "last_updated": "2026-11-07",
-    "results_status": "Unofficial - county and state canvass/certification pending; close races (e.g. HD-88, HD-78, SD-45) may still change",
-    "data_source": "Hamilton: Hamilton County Election Office via LarryInFishers; Marion: WFYI, Mirror Indy; Boone: Boone County Election Summary Report (11/3/2026); statewide/legislative winners: MultiState, Indiana Capital Chronicle",
-    "description": "2026 general election candidates and results for Hamilton, Marion, and Boone Counties in Indiana",
+    "data_source": "Hamilton County Election Office; Boone County Election Summary Report; WFYI and Mirror Indy (Marion); MultiState and Indiana Capital Chronicle (state and legislative races)",
+    "description": "2026 general election ballot options (candidates and public questions) for Hamilton, Marion, and Boone Counties in Indiana",
     "total_counties": 3,
     "notes": [
+      "Ballot options only; no results are included.",
       "No US Senate or Governor race was on Indiana's 2026 ballot.",
-      "'winner' is the overall race winner (district- or state-wide); 'votes_in_county' / 'percent_in_county' are that county's portion only. Marion County vote totals were not captured.",
       "'incumbent' is set only where a source states it or the incumbent lost; absence does not mean the candidate was a challenger.",
+      "'unopposed' marks races with a single candidate on the ballot.",
+      "Marion County local public questions were not verified and are not listed.",
       "School board and township races are not included."
     ]
   },
   "counties": {
     "Hamilton": {
-      "name": "Hamilton",
+      "name": "Hamilton County",
       "zip_codes": [
         "46032",
         "46033",
@@ -57,16 +58,11 @@ const electionData = {
             {
               "name": "Victoria Spartz",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 65570,
-              "percent_in_county": 44.54
+              "incumbent": true
             },
             {
               "name": "J.D. Ford",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 81500,
-              "percent_in_county": 55.36
+              "party": "Democratic"
             }
           ]
         },
@@ -74,220 +70,149 @@ const electionData = {
           "Secretary of State": [
             {
               "name": "Max Engling",
-              "party": "Republican",
-              "votes_in_county": 58277,
-              "percent_in_county": 39.2
+              "party": "Republican"
             },
             {
               "name": "Beau Bayh",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 80141,
-              "percent_in_county": 53.9
+              "party": "Democratic"
             },
             {
               "name": "Lauri A. Shillings",
-              "party": "Libertarian",
-              "votes_in_county": 2306,
-              "percent_in_county": 1.55
+              "party": "Libertarian"
             },
             {
               "name": "Greg Ballard",
-              "party": "Lincoln",
-              "votes_in_county": 7924,
-              "percent_in_county": 5.33
+              "party": "Lincoln"
             }
           ],
           "State Comptroller": [
             {
               "name": "Elise Nieshalla",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 67186,
-              "percent_in_county": 45.95
+              "incumbent": true
             },
             {
               "name": "Jessica Bailey",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 75183,
-              "percent_in_county": 51.42
+              "party": "Democratic"
             },
             {
               "name": "John Schick",
-              "party": "Libertarian",
-              "votes_in_county": 3856,
-              "percent_in_county": 2.64
+              "party": "Libertarian"
             }
           ],
           "Treasurer of State": [
             {
               "name": "Daniel Elliott",
               "party": "Republican",
-              "incumbent": true,
-              "winner": true,
-              "votes_in_county": 71493,
-              "percent_in_county": 49.04
+              "incumbent": true
             },
             {
               "name": "Coumba Kebe",
-              "party": "Democratic",
-              "votes_in_county": 74281,
-              "percent_in_county": 50.96
+              "party": "Democratic"
             }
           ],
           "State Senate District 21": [
             {
               "name": "Tracey Powell",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 13926,
-              "percent_in_county": 49.77
+              "party": "Republican"
             },
             {
               "name": "Kirsten Root",
-              "party": "Democratic",
-              "votes_in_county": 14052,
-              "percent_in_county": 50.23
+              "party": "Democratic"
             }
           ],
           "State Senate District 25": [
             {
               "name": "Mike Gaskill",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 1396,
-              "percent_in_county": 73.36
+              "party": "Republican"
             },
             {
               "name": "Tamie Dixon-Tatum",
-              "party": "Democratic",
-              "votes_in_county": 507,
-              "percent_in_county": 26.64
+              "party": "Democratic"
             }
           ],
           "State Senate District 29": [
             {
               "name": "John Ruckelshaus",
-              "party": "Republican",
-              "votes_in_county": 8175,
-              "percent_in_county": 43.05
+              "party": "Republican"
             },
             {
               "name": "Kristina Moorhead",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 10816,
-              "percent_in_county": 56.95
+              "party": "Democratic"
             }
           ],
           "State Senate District 31": [
             {
               "name": "Juanita Albright",
-              "party": "Republican",
-              "votes_in_county": 17517,
-              "percent_in_county": 42.66
+              "party": "Republican"
             },
             {
               "name": "Kerry J. Forestal",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 23549,
-              "percent_in_county": 57.34
+              "party": "Democratic"
             }
           ],
           "State House District 24": [
             {
               "name": "Hunter Smith",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 14414,
-              "percent_in_county": 46.23
+              "incumbent": true
             },
             {
               "name": "Racheal Bleicher",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 16766,
-              "percent_in_county": 53.77
+              "party": "Democratic"
             }
           ],
           "State House District 29": [
             {
               "name": "Alaina Shonkwiler",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 14623,
-              "percent_in_county": 52.39
+              "party": "Republican"
             },
             {
               "name": "Devon Wellington",
-              "party": "Democratic",
-              "votes_in_county": 13289,
-              "percent_in_county": 47.61
+              "party": "Democratic"
             }
           ],
           "State House District 32": [
             {
               "name": "Paul G. Nix",
-              "party": "Republican",
-              "votes_in_county": 9337,
-              "percent_in_county": 38.89
+              "party": "Republican"
             },
             {
               "name": "Victoria Garcia Wilburn",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 14672,
-              "percent_in_county": 61.11
+              "party": "Democratic"
             }
           ],
           "State House District 37": [
             {
               "name": "Todd Huston",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 12532,
-              "percent_in_county": 48.48
+              "incumbent": true
             },
             {
               "name": "Lauren S. Cole",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 13318,
-              "percent_in_county": 51.52
+              "party": "Democratic"
             }
           ],
           "State House District 39": [
             {
               "name": "Danny Lopez",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 13884,
-              "percent_in_county": 45.89
+              "incumbent": true
             },
             {
               "name": "Lindsay Gramlich",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 16369,
-              "percent_in_county": 54.11
+              "party": "Democratic"
             }
           ],
           "State House District 88": [
             {
               "name": "Chris Jeter",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 3854,
-              "percent_in_county": 46.93
+              "incumbent": true
             },
             {
               "name": "Stephanie Jo Yocum",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 4359,
-              "percent_in_county": 53.07
+              "party": "Democratic"
             }
           ]
         },
@@ -296,128 +221,87 @@ const electionData = {
             {
               "name": "Christine Altman",
               "party": "Republican",
-              "incumbent": true,
-              "winner": true,
-              "votes_in_county": 72549,
-              "percent_in_county": 50.11
+              "incumbent": true
             },
             {
               "name": "Ti'Gre McNear",
-              "party": "Democratic",
-              "votes_in_county": 72226,
-              "percent_in_county": 49.89
+              "party": "Democratic"
             }
           ],
           "Council District 1": [
             {
               "name": "Tim Griffin",
-              "party": "Republican",
-              "votes_in_county": 17164,
-              "percent_in_county": 46.83
+              "party": "Republican"
             },
             {
               "name": "Christopher Daniel",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 19487,
-              "percent_in_county": 53.17
+              "party": "Democratic"
             }
           ],
           "Council District 2": [
             {
               "name": "Amy Elizabeth Massillamany",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 14990,
-              "percent_in_county": 43.83
+              "incumbent": true
             },
             {
               "name": "Nathan Bullock",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 19213,
-              "percent_in_county": 56.17
+              "party": "Democratic"
             }
           ],
           "Council District 3": [
             {
               "name": "Mark F. Hall",
               "party": "Republican",
-              "incumbent": true,
-              "winner": true,
-              "votes_in_county": 19272,
-              "percent_in_county": 55.47
+              "incumbent": true
             },
             {
               "name": "Doug May",
-              "party": "Democratic",
-              "votes_in_county": 15474,
-              "percent_in_county": 44.53
+              "party": "Democratic"
             }
           ],
           "Council District 4": [
             {
               "name": "Ken Alexander",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 19384,
-              "percent_in_county": 48.67
+              "incumbent": true
             },
             {
               "name": "Jason E. Frank",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 20443,
-              "percent_in_county": 51.33
+              "party": "Democratic"
             }
           ],
           "Sheriff": [
             {
               "name": "Dustin K. Dixon",
-              "party": "Republican",
-              "votes_in_county": 71723,
-              "percent_in_county": 49.06
+              "party": "Republican"
             },
             {
               "name": "Charles Hollowell",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 74466,
-              "percent_in_county": 50.94
+              "party": "Democratic"
             }
           ],
           "Prosecutor": [
             {
               "name": "Josh Kocher",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 89007,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
           "Circuit Court Clerk": [
             {
               "name": "Beth Sheller",
-              "party": "Republican",
-              "votes_in_county": 70648,
-              "percent_in_county": 48.73
+              "party": "Republican"
             },
             {
               "name": "Alexandra E. Wilson",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 74325,
-              "percent_in_county": 51.27
+              "party": "Democratic"
             }
           ],
           "Assessor": [
             {
               "name": "Kevin W. Poore",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 88942,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -425,9 +309,6 @@ const electionData = {
             {
               "name": "Trini Beaver",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 87957,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -435,9 +316,6 @@ const electionData = {
             {
               "name": "Jeff D. Jellison",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 90435,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -445,9 +323,6 @@ const electionData = {
             {
               "name": "Chris Evans",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 89371,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -455,9 +330,6 @@ const electionData = {
             {
               "name": "Angela Brown Swenson",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 89843,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -465,34 +337,23 @@ const electionData = {
             {
               "name": "David K. Najjar",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 88659,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
           "Superior Court Judge No. 8": [
             {
               "name": "Danica L. Eyler",
-              "party": "Republican",
-              "votes_in_county": 68664,
-              "percent_in_county": 47.53
+              "party": "Republican"
             },
             {
               "name": "Emily L. Angel Shaw",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 75801,
-              "percent_in_county": 52.47
+              "party": "Democratic"
             }
           ],
           "Superior Court Judge No. 9": [
             {
               "name": "Paul C. Sweeney",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 89165,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ]
@@ -504,55 +365,35 @@ const electionData = {
           "question": "School funding referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 24669,
-          "yes_percent": 58.07,
-          "no_votes_in_county": 17812,
-          "no_percent": 41.93
+          "status": "On ballot"
         },
         {
           "title": "Hamilton Southeastern Schools Referendum",
           "question": "School funding referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 25624,
-          "yes_percent": 58.33,
-          "no_votes_in_county": 18309,
-          "no_percent": 41.67
+          "status": "On ballot"
         },
         {
           "title": "Noblesville Schools Referendum",
           "question": "School funding referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 15211,
-          "yes_percent": 57.18,
-          "no_votes_in_county": 11393,
-          "no_percent": 42.82
+          "status": "On ballot"
         },
         {
           "title": "Westfield Washington Schools Referendum",
           "question": "School funding referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 14542,
-          "yes_percent": 56.01,
-          "no_votes_in_county": 11423,
-          "no_percent": 43.99
+          "status": "On ballot"
         },
         {
           "title": "Sheridan Schools Referendum",
           "question": "School funding referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Failed",
-          "yes_votes_in_county": 931,
-          "yes_percent": 47.67,
-          "no_votes_in_county": 1022,
-          "no_percent": 52.33
+          "status": "On ballot"
         }
       ],
       "voter_questions": [
@@ -561,33 +402,19 @@ const electionData = {
           "question": "Provide for the denial of bail when the accused is found to pose a substantial risk to another person (Public Question 1)",
           "type": "Statewide",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 82243,
-          "yes_percent": 57.9,
-          "no_votes_in_county": 59798,
-          "no_percent": 42.1
+          "status": "On ballot"
         },
         {
           "title": "Public Question 2 - Judge Residence",
           "question": "Require city and town court judges to reside in the county where the court is located or the bordering county closest to the court (Public Question 2)",
           "type": "Statewide",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 88184,
-          "yes_percent": 61.83,
-          "no_votes_in_county": 54448,
-          "no_percent": 38.17
+          "status": "On ballot"
         }
-      ],
-      "turnout": {
-        "registered_voters": 290805,
-        "ballots_cast": 150804,
-        "percent": 51.86,
-        "precincts_reporting": "234 of 234"
-      }
+      ]
     },
     "Marion": {
-      "name": "Marion",
+      "name": "Marion County",
       "zip_codes": [
         "46201",
         "46202",
@@ -652,16 +479,14 @@ const electionData = {
             {
               "name": "Jefferson Shreve",
               "party": "Republican",
-              "incumbent": true,
-              "winner": true
+              "incumbent": true
             }
           ],
           "US House District 7": [
             {
               "name": "André Carson",
               "party": "Democratic",
-              "incumbent": true,
-              "winner": true
+              "incumbent": true
             },
             {
               "name": "Patrick McAuley",
@@ -681,8 +506,7 @@ const electionData = {
             },
             {
               "name": "Beau Bayh",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             },
             {
               "name": "Lauri A. Shillings",
@@ -701,8 +525,7 @@ const electionData = {
             },
             {
               "name": "Jessica Bailey",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             },
             {
               "name": "John Schick",
@@ -713,8 +536,7 @@ const electionData = {
             {
               "name": "Daniel Elliott",
               "party": "Republican",
-              "incumbent": true,
-              "winner": true
+              "incumbent": true
             },
             {
               "name": "Coumba Kebe",
@@ -728,8 +550,7 @@ const electionData = {
             },
             {
               "name": "Kristina Moorhead",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State Senate District 31": [
@@ -739,8 +560,7 @@ const electionData = {
             },
             {
               "name": "Kerry J. Forestal",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State House District 86": [
@@ -750,15 +570,13 @@ const electionData = {
             },
             {
               "name": "Ed DeLaney",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State House District 87": [
             {
               "name": "Carey Hamilton",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -770,15 +588,13 @@ const electionData = {
             },
             {
               "name": "Stephanie Jo Yocum",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State House District 89": [
             {
               "name": "Mitch Gore",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             },
             {
               "name": "Donald Weingarten",
@@ -793,8 +609,7 @@ const electionData = {
             },
             {
               "name": "David Lawrence Boyd",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State House District 91": [
@@ -805,15 +620,13 @@ const electionData = {
             },
             {
               "name": "Jarren Hurt",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State House District 92": [
             {
               "name": "Reneé Pack",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -825,15 +638,13 @@ const electionData = {
             },
             {
               "name": "Eva Rosberg",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             }
           ],
           "State House District 94": [
             {
               "name": "Cherrish Pryor",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -841,7 +652,6 @@ const electionData = {
             {
               "name": "John Bartlett",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -849,15 +659,13 @@ const electionData = {
             {
               "name": "Gregory Porter",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
           "State House District 97": [
             {
               "name": "Justin Moed",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             },
             {
               "name": "Mark Renholzberger",
@@ -868,7 +676,6 @@ const electionData = {
             {
               "name": "Robin Shackleford",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -876,7 +683,6 @@ const electionData = {
             {
               "name": "Vanessa Summers",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -884,7 +690,6 @@ const electionData = {
             {
               "name": "Blake Johnson",
               "party": "Democratic",
-              "winner": true,
               "unopposed": true
             }
           ]
@@ -893,8 +698,7 @@ const electionData = {
           "Sheriff": [
             {
               "name": "Kelvis Williams",
-              "party": "Democratic",
-              "winner": true
+              "party": "Democratic"
             },
             {
               "name": "Tom Vaughn",
@@ -905,8 +709,7 @@ const electionData = {
             {
               "name": "Ryan Mears",
               "party": "Democratic",
-              "incumbent": true,
-              "winner": true
+              "incumbent": true
             },
             {
               "name": "Philip Foust",
@@ -917,8 +720,7 @@ const electionData = {
             {
               "name": "Kate Sweeney Bell",
               "party": "Democratic",
-              "incumbent": true,
-              "winner": true
+              "incumbent": true
             },
             {
               "name": "Robbin Stewart",
@@ -930,7 +732,6 @@ const electionData = {
               "name": "Joseph P. O'Connor",
               "party": "Democratic",
               "incumbent": true,
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -939,7 +740,6 @@ const electionData = {
               "name": "Myla Eldridge",
               "party": "Democratic",
               "incumbent": true,
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -948,7 +748,6 @@ const electionData = {
               "name": "Faith James Kimbrough",
               "party": "Democratic",
               "incumbent": true,
-              "winner": true,
               "unopposed": true
             }
           ],
@@ -956,16 +755,11 @@ const electionData = {
             {
               "name": "Cheryl Rivera",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 13232,
-              "percent_in_county": 49.69
+              "incumbent": true
             },
             {
               "name": "Jami R. Sayeed",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 13395,
-              "percent_in_county": 50.31
+              "party": "Democratic"
             }
           ]
         }
@@ -977,19 +771,19 @@ const electionData = {
           "question": "Provide for the denial of bail when the accused is found to pose a substantial risk to another person (Public Question 1)",
           "type": "Statewide",
           "year": 2026,
-          "status": "Passed"
+          "status": "On ballot"
         },
         {
           "title": "Public Question 2 - Judge Residence",
           "question": "Require city and town court judges to reside in the county where the court is located or the bordering county closest to the court (Public Question 2)",
           "type": "Statewide",
           "year": 2026,
-          "status": "Passed"
+          "status": "On ballot"
         }
       ]
     },
     "Boone": {
-      "name": "Boone",
+      "name": "Boone County",
       "zip_codes": [
         "46001",
         "46011",
@@ -1037,15 +831,11 @@ const electionData = {
             {
               "name": "Jim Baird",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 13742,
-              "percent_in_county": 48.86
+              "incumbent": true
             },
             {
               "name": "Drew Cox",
-              "party": "Democratic",
-              "votes_in_county": 14320,
-              "percent_in_county": 50.91
+              "party": "Democratic"
             }
           ]
         },
@@ -1053,143 +843,97 @@ const electionData = {
           "Secretary of State": [
             {
               "name": "Max Engling",
-              "party": "Republican",
-              "votes_in_county": 11260,
-              "percent_in_county": 39.44
+              "party": "Republican"
             },
             {
               "name": "Beau Bayh",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 14732,
-              "percent_in_county": 51.6
+              "party": "Democratic"
             },
             {
               "name": "Lauri A. Shillings",
-              "party": "Libertarian",
-              "votes_in_county": 576,
-              "percent_in_county": 2.02
+              "party": "Libertarian"
             },
             {
               "name": "Greg Ballard",
-              "party": "Lincoln",
-              "votes_in_county": 1972,
-              "percent_in_county": 6.91
+              "party": "Lincoln"
             }
           ],
           "State Comptroller": [
             {
               "name": "Elise Nieshalla",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 13767,
-              "percent_in_county": 49.01
+              "incumbent": true
             },
             {
               "name": "Jessica Bailey",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 13449,
-              "percent_in_county": 47.87
+              "party": "Democratic"
             },
             {
               "name": "John Schick",
-              "party": "Libertarian",
-              "votes_in_county": 876,
-              "percent_in_county": 3.12
+              "party": "Libertarian"
             }
           ],
           "Treasurer of State": [
             {
               "name": "Daniel Elliott",
               "party": "Republican",
-              "incumbent": true,
-              "winner": true,
-              "votes_in_county": 14504,
-              "percent_in_county": 51.87
+              "incumbent": true
             },
             {
               "name": "Coumba Kebe",
-              "party": "Democratic",
-              "votes_in_county": 13460,
-              "percent_in_county": 48.13
+              "party": "Democratic"
             }
           ],
           "State Senate District 29": [
             {
               "name": "John Ruckelshaus",
-              "party": "Republican",
-              "votes_in_county": 5491,
-              "percent_in_county": 45.66
+              "party": "Republican"
             },
             {
               "name": "Kristina Moorhead",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 6534,
-              "percent_in_county": 54.34
+              "party": "Democratic"
             }
           ],
           "State House District 24": [
             {
               "name": "Hunter Smith",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 1076,
-              "percent_in_county": 59.15
+              "incumbent": true
             },
             {
               "name": "Racheal Bleicher",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 743,
-              "percent_in_county": 40.85
+              "party": "Democratic"
             }
           ],
           "State House District 25": [
             {
               "name": "Becky Cash",
               "party": "Republican",
-              "incumbent": true,
-              "votes_in_county": 7863,
-              "percent_in_county": 41.58
+              "incumbent": true
             },
             {
               "name": "Tiffany Stoner",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 11049,
-              "percent_in_county": 58.42
+              "party": "Democratic"
             }
           ],
           "State House District 28": [
             {
               "name": "Jeffrey A. Thompson",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 719,
-              "percent_in_county": 71.4
+              "party": "Republican"
             },
             {
               "name": "Karen Whitney",
-              "party": "Democratic",
-              "votes_in_county": 288,
-              "percent_in_county": 28.6
+              "party": "Democratic"
             }
           ],
           "State House District 41": [
             {
               "name": "Mark Genda",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 3957,
-              "percent_in_county": 61.09
+              "party": "Republican"
             },
             {
               "name": "Jackson T. Hayes",
-              "party": "Democratic",
-              "votes_in_county": 2520,
-              "percent_in_county": 38.91
+              "party": "Democratic"
             }
           ]
         },
@@ -1197,85 +941,57 @@ const electionData = {
           "Commissioner District 1": [
             {
               "name": "Jason Alan Plunkett",
-              "party": "Republican",
-              "votes_in_county": 13622,
-              "percent_in_county": 48.51
+              "party": "Republican"
             },
             {
               "name": "Robert D. (Bob) Brennan",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 14456,
-              "percent_in_county": 51.49
+              "party": "Democratic"
             }
           ],
           "Council District 1": [
             {
               "name": "Jennifer J. Hostetter",
-              "party": "Republican",
-              "votes_in_county": 4087,
-              "percent_in_county": 46.0
+              "party": "Republican"
             },
             {
               "name": "Alyson Bray",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 4798,
-              "percent_in_county": 54.0
+              "party": "Democratic"
             }
           ],
           "Council District 2": [
             {
               "name": "Gretchen Smith",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 3782,
-              "percent_in_county": 61.11
+              "party": "Republican"
             },
             {
               "name": "Kevin W. Prather",
-              "party": "Democratic",
-              "votes_in_county": 2407,
-              "percent_in_county": 38.89
+              "party": "Democratic"
             }
           ],
           "Council District 3": [
             {
               "name": "Kevin Van Horn",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 2768,
-              "percent_in_county": 58.27
+              "party": "Republican"
             },
             {
               "name": "Geoffrey (Geoff) Lee",
-              "party": "Democratic",
-              "votes_in_county": 1982,
-              "percent_in_county": 41.73
+              "party": "Democratic"
             }
           ],
           "Council District 4": [
             {
               "name": "Craig Justin Melton",
-              "party": "Republican",
-              "votes_in_county": 3602,
-              "percent_in_county": 44.1
+              "party": "Republican"
             },
             {
               "name": "Javier Morell",
-              "party": "Democratic",
-              "winner": true,
-              "votes_in_county": 4566,
-              "percent_in_county": 55.9
+              "party": "Democratic"
             }
           ],
           "Sheriff": [
             {
               "name": "Anthony (Tony) Harris",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 18400,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -1283,34 +999,23 @@ const electionData = {
             {
               "name": "Kent T. Eastwood",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 17953,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
           "Circuit Court Clerk": [
             {
               "name": "Lisa L. Bruder",
-              "party": "Republican",
-              "winner": true,
-              "votes_in_county": 14399,
-              "percent_in_county": 52.08
+              "party": "Republican"
             },
             {
               "name": "Monica Leigh White",
-              "party": "Democratic",
-              "votes_in_county": 13247,
-              "percent_in_county": 47.92
+              "party": "Democratic"
             }
           ],
           "Assessor": [
             {
               "name": "Jennifer Lasley",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 17943,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -1318,9 +1023,6 @@ const electionData = {
             {
               "name": "Carol Cunningham",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 18184,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -1328,9 +1030,6 @@ const electionData = {
             {
               "name": "Matthew C. Kincaid",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 18467,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ],
@@ -1338,9 +1037,6 @@ const electionData = {
             {
               "name": "Thomas Kenneth (T.K.) Morris",
               "party": "Republican",
-              "winner": true,
-              "votes_in_county": 18103,
-              "percent_in_county": 100.0,
               "unopposed": true
             }
           ]
@@ -1352,33 +1048,21 @@ const electionData = {
           "question": "School referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 11054,
-          "yes_percent": 69.08,
-          "no_votes_in_county": 4947,
-          "no_percent": 30.92
+          "status": "On ballot"
         },
         {
           "title": "Sheridan Schools Referendum",
           "question": "School referendum (question text not captured in source)",
           "type": "School",
           "year": 2026,
-          "status": "Failed",
-          "yes_votes_in_county": 173,
-          "yes_percent": 42.3,
-          "no_votes_in_county": 236,
-          "no_percent": 57.7
+          "status": "On ballot"
         },
         {
           "title": "City of Lebanon Public Question",
           "question": "City public question (question text not captured in source)",
           "type": "Municipal",
           "year": 2026,
-          "status": "Failed",
-          "yes_votes_in_county": 1763,
-          "yes_percent": 39.69,
-          "no_votes_in_county": 2679,
-          "no_percent": 60.31
+          "status": "On ballot"
         }
       ],
       "voter_questions": [
@@ -1387,30 +1071,16 @@ const electionData = {
           "question": "Provide for the denial of bail when the accused is found to pose a substantial risk to another person (Public Question 1)",
           "type": "Statewide",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 15616,
-          "yes_percent": 58.02,
-          "no_votes_in_county": 11298,
-          "no_percent": 41.98
+          "status": "On ballot"
         },
         {
           "title": "Public Question 2 - Judge Residence",
           "question": "Require city and town court judges to reside in the county where the court is located or the bordering county closest to the court (Public Question 2)",
           "type": "Statewide",
           "year": 2026,
-          "status": "Passed",
-          "yes_votes_in_county": 16195,
-          "yes_percent": 61.15,
-          "no_votes_in_county": 10288,
-          "no_percent": 38.85
+          "status": "On ballot"
         }
-      ],
-      "turnout": {
-        "registered_voters": 60377,
-        "ballots_cast": 29015,
-        "percent": 48.06,
-        "precincts_reporting": "53 of 53"
-      }
+      ]
     }
   },
   "zip_code_map": {
