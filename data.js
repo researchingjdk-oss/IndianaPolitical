@@ -504,3 +504,32 @@ const electionData = {
     "46290": "Marion",
     "46298": "Marion"
   }
+// Get county by zip code
+function getCountyByZipCode(zipCode) {
+    if (!electionData) return null;
+
+    const countyName = electionData.zip_code_map[zipCode];
+    if (!countyName) return null;
+
+    return electionData.counties[countyName];
+}
+
+// Get county by name
+function getCountyByName(countyName) {
+    if (!electionData) return null;
+
+    return electionData.counties[countyName];
+}
+
+// Get all county names
+function getAllCountyNames() {
+    if (!electionData) return [];
+
+    return Object.keys(electionData.counties).sort();
+}
+
+// Get metadata
+function getMetadata() {
+    if (!electionData) return null;
+    return electionData.metadata;
+}
