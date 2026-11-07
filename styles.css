@@ -1,472 +1,480 @@
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-color: #1a3e72;
-    --secondary-color: #d4a76a;
-    --accent-color: #e85a4f;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --success-color: #28a745;
-    --warning-color: #ffc107;
-    --danger-color: #dc3545;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+  --primary-color: #1a3e72;
+  --secondary-color: #d4a76a;
+  --accent-color: #e85a4f;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f7fa;
 }
 
 /* Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
 header {
-    text-align: center;
-    padding: 30px 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    border-radius: var(--border-radius);
-    margin-bottom: 30px;
-    box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  border-radius: var(--border-radius);
+  margin-bottom: 30px;
+  box-shadow: var(--box-shadow);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 header .subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 /* Search Section */
 .search-section {
-    background: white;
-    padding: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
-    text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .search-box h2 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 .search-box p {
-    margin-bottom: 20px;
-    color: #666;
+  margin-bottom: 20px;
+  color: #666;
 }
 
 .input-group {
-    display: flex;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .input-group input {
-    flex: 1;
-    padding: 12px 15px;
-    border: 2px solid #ddd;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    transition: var(--transition);
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
 }
 
 .input-group input:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.1);
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.1);
 }
 
 .input-group button {
-    padding: 12px 25px;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: var(--transition);
+  padding: 12px 25px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .input-group button:hover {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
+  background: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
 .error {
-    color: var(--danger-color);
-    margin-top: 10px;
-    font-weight: bold;
+  color: var(--danger-color);
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 /* County Selector */
 .county-selector {
-    background: white;
-    padding: 20px 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
-    text-align: center;
+  background: white;
+  padding: 20px 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .county-selector h2 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .county-selector select {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px 15px;
-    border: 2px solid #ddd;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    background: white;
-    cursor: pointer;
-    transition: var(--transition);
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .county-selector select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.1);
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(26, 62, 114, 0.1);
 }
 
 /* Results Section */
 .results-section {
-    background: white;
-    padding: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
 }
 
 .county-header {
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .county-header h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 5px;
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .county-header p {
-    color: #666;
-    font-style: italic;
+  color: #666;
+  font-style: italic;
 }
 
 .candidates-section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .candidates-section h3 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
 .candidates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
 .candidate-category {
-    background: var(--light-color);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    border: 1px solid #eee;
+  background: var(--light-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
 }
 
 .candidate-category h4 {
-    color: var(--secondary-color);
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    border-bottom: 1px solid var(--secondary-color);
-    padding-bottom: 5px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 5px;
 }
 
 .candidate-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .candidate-item {
-    background: white;
-    padding: 12px 15px;
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--primary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background: white;
+  padding: 12px 15px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .candidate-item .race-title {
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-    font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-size: 0.95rem;
 }
 
 .candidate-item .candidate-name {
-    font-size: 0.95rem;
-    margin-bottom: 3px;
+  font-size: 0.95rem;
+  margin-bottom: 3px;
 }
 
 .candidate-item .candidate-details {
-    font-size: 0.85rem;
-    color: #666;
+  font-size: 0.85rem;
+  color: #666;
 }
 
 .candidate-item .party-republican {
-    color: #dc3545;
+  color: #dc3545;
 }
 
 .candidate-item .party-democratic {
-    color: #007bff;
+  color: #007bff;
 }
 
 .candidate-item .party-independent {
-    color: #6c757d;
+  color: #6c757d;
 }
 
 .candidate-item .incumbent {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Referendums Section */
 .referendums-section h3,
 .voter-questions-section h3 {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
 .referendum-item,
 .voter-question-item {
-    background: var(--light-color);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    margin-bottom: 15px;
-    border-left: 4px solid var(--secondary-color);
+  background: var(--light-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+  border-left: 4px solid var(--secondary-color);
 }
 
 .referendum-item .referendum-title {
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .referendum-item .referendum-question {
-    margin-bottom: 10px;
-    line-height: 1.6;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .referendum-item .referendum-meta {
-    display: flex;
-    gap: 15px;
-    font-size: 0.9rem;
-    color: #666;
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .referendum-meta span {
-    background: white;
-    padding: 3px 8px;
-    border-radius: 4px;
+  background: white;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 .voter-question-item .question-text {
-    font-size: 1.05rem;
-    margin-bottom: 10px;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
 }
 
 .voter-question-item .question-meta {
-    display: flex;
-    gap: 15px;
-    font-size: 0.9rem;
-    color: #666;
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .question-meta span {
-    background: white;
-    padding: 3px 8px;
-    border-radius: 4px;
+  background: white;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 /* All Counties Section */
 .all-counties-section {
-    background: white;
-    padding: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 30px;
 }
 
 .all-counties-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .all-counties-section p {
-    text-align: center;
-    color: #666;
-    margin-bottom: 25px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
 }
 
 .counties-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .county-card {
-    background: var(--light-color);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    border: 1px solid #eee;
-    cursor: pointer;
-    transition: var(--transition);
+  background: var(--light-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 300px;
 }
 
 .county-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--box-shadow);
-    background: #e9ecef;
+  transform: translateY(-3px);
+  box-shadow: var(--box-shadow);
+  background: #e9ecef;
 }
 
 .county-card h4 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 .county-card p {
-    font-size: 0.85rem;
-    color: #666;
-    line-height: 1.5;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    color: #666;
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
+  header h1 {
+    font-size: 2rem;
+  }
 
-    .input-group {
-        flex-direction: column;
-    }
+  .input-group {
+    flex-direction: column;
+  }
 
-    .input-group input,
-    .input-group button {
-        width: 100%;
-    }
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
 
-    .candidates-grid {
-        grid-template-columns: 1fr;
-    }
+  .candidates-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .counties-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
+  .counties-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
+  .container {
+    padding: 10px;
+  }
 
-    header {
-        padding: 20px 0;
-    }
+  header {
+    padding: 20px 0;
+  }
 
-    header h1 {
-        font-size: 1.8rem;
-    }
+  header h1 {
+    font-size: 1.8rem;
+  }
 
-    .search-section,
-    .results-section,
-    .all-counties-section {
-        padding: 20px;
-    }
+  .search-section,
+  .results-section,
+  .all-counties-section {
+    padding: 20px;
+  }
 
-    .counties-grid {
-        grid-template-columns: 1fr;
-    }
+  .counties-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .results-section {
-    animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.5s ease;
 }
 
 /* Status indicators */
 .status-active {
-    background-color: rgba(40, 167, 69, 0.1);
-    color: var(--success-color);
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--success-color);
 }
 
 .status-pending {
-    background-color: rgba(255, 193, 7, 0.1);
-    color: var(--warning-color);
+  background-color: rgba(255, 193, 7, 0.1);
+  color: var(--warning-color);
 }
 
 .status-completed {
-    background-color: rgba(26, 62, 114, 0.1);
-    color: var(--primary-color);
+  background-color: rgba(26, 62, 114, 0.1);
+  color: var(--primary-color);
 }
 
 /* Empty state */
 .empty-state {
-    text-align: center;
-    padding: 40px;
-    color: #666;
-    font-style: italic;
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
 }

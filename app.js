@@ -1,3 +1,5 @@
+// import getCountyByName from './data.js';
+
 // Main application logic
 let currentCounty = null;
 
