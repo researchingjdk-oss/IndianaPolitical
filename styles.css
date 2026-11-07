@@ -69,6 +69,11 @@ header .subtitle {
   text-align: center;
 }
 
+#search-header {
+  font-size: 30px;
+  margin: 0;
+}
+
 .search-box h2 {
   color: var(--primary-color);
   margin-bottom: 15px;
@@ -134,13 +139,14 @@ header .subtitle {
   text-align: center;
 }
 
-.county-selector h2 {
+.search-section h2 {
   color: var(--primary-color);
   margin-bottom: 15px;
   font-size: 1.3rem;
+  margin-top: 40px;
 }
 
-.county-selector select {
+.search-section select {
   width: 100%;
   max-width: 400px;
   padding: 12px 15px;
@@ -262,6 +268,22 @@ header .subtitle {
 
 .candidate-item .incumbent {
   font-weight: bold;
+}
+
+.candidate-name {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.candidate-name:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Referendums Section */

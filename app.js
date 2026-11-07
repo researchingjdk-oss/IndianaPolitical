@@ -118,9 +118,12 @@ function displayCandidates(county) {
 
     const candidates = county.candidates || {};
 
+    console.log("Candidates:", candidates);
+console.log("Federal:", candidates.federal);
     // Federal candidates
     if (candidates.federal) {
         displayCandidateCategory(federalCandidatesEl, candidates.federal);
+        // federalCandidatesEl.href = "https://ballotpedia.org/" + candidates.federal[0].name.replaceAll(" ", "_");
     } else {
         federalCandidatesEl.innerHTML = '<p class="empty-state">No federal candidates found.</p>';
     }
@@ -162,13 +165,31 @@ function displayCandidateCategory(container, categoryCandidates) {
                 const candidateDiv = document.createElement('div');
                 candidateDiv.className = 'candidate-detail';
 
-                const candidateName = document.createElement('span');
-                candidateName.className = 'candidate-name';
-                if (candidate.incumbent) {
-                    candidateName.classList.add('incumbent');
-                }
-                candidateName.textContent = candidate.name;
-                candidateDiv.appendChild(candidateName);
+                const candidateName = document.createElement('a');
+candidateName.className = 'candidate-name';
+
+if (candidate.incumbent) {
+    candidateName.classList.add('incumbent');
+}
+
+// Create Ballotpedia URL
+const ballotpediaName = candidate.name.replaceAll(" ", "_");
+
+candidateName.href = `https://ballotpedia.org/${encodeURIComponent(ballotpediaName).replaceAll("%28", "(").replaceAll("%29", ")")}`;
+
+candidateName.textContent = candidate.name;
+candidateName.target = "_blank";
+candidateName.rel = "noopener noreferrer";
+
+candidateDiv.appendChild(candidateName);
+
+                // const candidateName = document.createElement('span');
+                // candidateName.className = 'candidate-name';
+                // if (candidate.incumbent) {
+                //     candidateName.classList.add('incumbent');
+                // }
+                // candidateName.textContent = candidate.name;
+                // candidateDiv.appendChild(candidateName);
 
                 const candidateInfo = document.createElement('span');
                 candidateInfo.className = `candidate-details party-${candidate.party.toLowerCase()}`;
