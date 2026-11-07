@@ -18,7 +18,7 @@ const electionData = {
   },
   "counties": {
     "Hamilton": {
-      "name": "Hamilton County",
+      "name": "Hamilton",
       "zip_codes": [
         "46032",
         "46033",
@@ -414,7 +414,7 @@ const electionData = {
       ]
     },
     "Marion": {
-      "name": "Marion County",
+      "name": "Marion",
       "zip_codes": [
         "46201",
         "46202",
@@ -783,7 +783,7 @@ const electionData = {
       ]
     },
     "Boone": {
-      "name": "Boone County",
+      "name": "Boone",
       "zip_codes": [
         "46001",
         "46011",

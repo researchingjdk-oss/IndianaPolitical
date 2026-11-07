@@ -118,8 +118,6 @@ function displayCandidates(county) {
 
     const candidates = county.candidates || {};
 
-    console.log("Candidates:", candidates);
-console.log("Federal:", candidates.federal);
     // Federal candidates
     if (candidates.federal) {
         displayCandidateCategory(federalCandidatesEl, candidates.federal);
